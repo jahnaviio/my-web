@@ -11,46 +11,103 @@ body{
 
 /* HERO */
 .hero{
-    height:70vh; /* reduced space */
-    background:url("https://i.pinimg.com/1200x/0d/3a/b2/0d3ab250978576e34989ee8361b737b2.jpg") center/cover no-repeat;
-    position:relative;
+    min-height:100vh;
     display:flex;
     align-items:center;
     justify-content:center;
-    text-align:center;
+    padding:40px 8%;
+    background:#f4f7ff;
 }
 
-.overlay{
-    position:absolute;
+.hero-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
     width:100%;
-    height:100%;
-    background:rgba(255,255,255,0.82);
+    max-width:1200px;
+    gap:40px;
 }
 
-.hero-content{
-    position:relative;
-    max-width:700px;
+.hero-left{
+    flex:1;
 }
 
-.hero h1{
-    font-size:44px;
+.hero-left h1{
+    font-size:60px;
     color:#4a6cf7;
 }
 
 .role{
-    margin-top:8px;
-    font-size:18px;
+    margin-top:15px;
+    font-size:22px;
     color:#666;
 }
 
 .tagline{
-    margin-top:15px;
-    font-size:20px;
+    margin-top:25px;
+    font-size:24px;
+    line-height:1.5;
+}
+
+.hero-buttons{
+    margin-top:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    margin-right:15px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:#4a6cf7;
+    color:white;
+}
+
+.btn-primary:hover{
+    background:#3953c5;
+}
+
+.btn-outline{
+    border:2px solid #4a6cf7;
+    color:#4a6cf7;
+}
+
+.btn-outline:hover{
+    background:#4a6cf7;
+    color:white;
+}
+
+.hero-right{
+    flex:1;
+    text-align:right;
+}
+
+.hero-right img{
+    width:100%;
+    max-width:550px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .hero-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-right{
+        text-align:center;
+        margin-top:30px;
+    }
 }
 
 /* SECTIONS */
 .section{
-    padding:60px 20px;
+    padding:70px 20px;
     max-width:1000px;
     margin:auto;
     text-align:center;
@@ -63,6 +120,7 @@ body{
 .section h2{
     color:#4a6cf7;
     margin-bottom:20px;
+    font-size:28px;
 }
 
 /* CARDS */
@@ -111,4 +169,28 @@ footer{
 .footer-right a{
     color:white;
     text-decoration:none;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-buttons{
+        text-align:center;
+    }
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
 }

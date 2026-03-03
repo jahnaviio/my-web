@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    color:#333;
+}
+
+/* HERO */
+.hero{
+    height:70vh; /* reduced space */
+    background:url("https://i.pinimg.com/1200x/0d/3a/b2/0d3ab250978576e34989ee8361b737b2.jpg") center/cover no-repeat;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,0.82);
+}
+
+.hero-content{
+    position:relative;
+    max-width:700px;
+}
+
+.hero h1{
+    font-size:44px;
+    color:#4a6cf7;
+}
+
+.role{
+    margin-top:8px;
+    font-size:18px;
+    color:#666;
+}
+
+.tagline{
+    margin-top:15px;
+    font-size:20px;
+}
+
+/* SECTIONS */
+.section{
+    padding:60px 20px;
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+}
+
+.section.light{
+    background:#f4f7ff;
+}
+
+.section h2{
+    color:#4a6cf7;
+    margin-bottom:20px;
+}
+
+/* CARDS */
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    width:260px;
+    border-radius:12px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.link{
+    text-decoration:none;
+    color:inherit;
+}
+
+.price{
+    font-size:26px;
+    color:#4a6cf7;
+    font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+    background:#4a6cf7;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    padding:20px 40px;
+    flex-wrap:wrap;
+}
+
+.footer-right a{
+    color:white;
+    text-decoration:none;
+}
